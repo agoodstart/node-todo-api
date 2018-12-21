@@ -1,5 +1,6 @@
 const { User } = require("./../models/user");
 
+// Authenticates the user, using hashed token.
 const authenticate = (req, res, next) => {
   const token = req.header("x-auth");
 
